@@ -19,4 +19,5 @@ makeBurgerDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
   // adding new image file to pizzaDancer node
   this.$node = $('<img src=pictures/burger.gif>');
+  this.$node.attr('class', 'burger');
 };

@@ -25,3 +25,15 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.pizza{
+  height: 200px;
+  width: 200px;
+  position:absolute;
+}
+
+.burger{
+  height: 200px;
+  width: 200px;
+  position:absolute;
+}
