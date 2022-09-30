@@ -21,6 +21,19 @@ makeBlinkyDancer.prototype.step = function () {
   this.$node.toggle(this.timeBetweenSteps);
 };
 
+//lineUp method
+makeBlinkyDancer.prototype.lineUp = function() {
+  // change the style position
+  var styleSettings = {
+    top: 0,
+    left: 0,
+  };
+  $('.dancer').css(styleSettings);
+  $('.dancer').css('display', 'inline-block');
+  $('.dancer').css('position', 'static');
+};
+
+
 
 // var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 

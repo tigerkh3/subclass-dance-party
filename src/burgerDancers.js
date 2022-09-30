@@ -21,3 +21,15 @@ makeBurgerDancer.prototype.step = function () {
   this.$node = $('<img src=pictures/burger.gif>');
   this.$node.attr('class', 'burger');
 };
+
+// add our line up method
+makeBurgerDancer.prototype.lineUp = function() {
+  // change the style position
+  var styleSettings = {
+    top: 0,
+    left: 0,
+  };
+  // access the style setting to move it
+  $('.burger').css(styleSettings);
+  $('.burger').css('position', 'static');
+};

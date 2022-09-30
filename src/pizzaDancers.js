@@ -21,3 +21,14 @@ makePizzaDancer.prototype.step = function () {
   this.$node = $('<img src=pictures/pizza.gif>');
   this.$node.attr('class', 'pizza');
 };
+
+// create lineUp method
+makePizzaDancer.prototype.lineUp = function() {
+  // change the style position
+  var styleSettings = {
+    top: 0,
+    left: 0,
+  };
+  $('.pizza').css(styleSettings);
+  $('.pizza').css('position', 'static');
+};
