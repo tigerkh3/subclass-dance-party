@@ -44,6 +44,19 @@ $(document).ready(function() {
     }
   });
 
+  // want a mouse over function that makes dancer disappear
+  $('body').on('mouseover', '.test', function(event) {
+    $(event.target).attr('src', 'pictures/boom.gif');
+
+    setTimeout(function () {
+      $(event.target).hide();
+    }, 800);
+
+  });
+
+  $('body').on('mouseover', '.dancer', function(event) {
+    $(event.target).css('border', '10px solid #49fb35');
+  });
 
 });
 

@@ -20,6 +20,7 @@ makeBurgerDancer.prototype.step = function () {
   // adding new image file to pizzaDancer node
   this.$node = $('<img src=pictures/burger.gif>');
   this.$node.attr('class', 'burger');
+  this.$node.addClass('test');
 };
 
 // add our line up method
