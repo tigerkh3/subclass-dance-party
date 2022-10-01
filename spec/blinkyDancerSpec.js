@@ -32,3 +32,55 @@ describe('blinkyDancer', function() {
     });
   });
 });
+
+
+describe('burgerDancer', function() {
+
+  var burgerDancer, clock;
+  var timeBetweenSteps = 100;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    burgerDancer = new makeBurgerDancer(10, 20, timeBetweenSteps);
+    console.log(burgerDancer);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(burgerDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it('clicking lineup should have top and left values of 0', function() {
+    expect(burgerDancer.top).to.be.equal(10);
+    expect(burgerDancer.left).to.be.equal(20);
+  });
+
+  it('lineUp method should be a function', function() {
+    expect(typeof burgerDancer.lineUp).to.be.equal('function');
+  });
+
+});
+
+describe('pizzaDancer', function() {
+
+  var pizzaDancer, clock;
+  var timeBetweenSteps = 100;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    pizzaDancer = new makePizzaDancer(10, 20, timeBetweenSteps);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(pizzaDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it('clicking lineup should have top and left values of 0', function() {
+    expect(pizzaDancer.top).to.be.equal(10);
+    expect(pizzaDancer.left).to.be.equal(20);
+  });
+
+  it('lineUp method should be a function', function() {
+    expect(typeof pizzaDancer.lineUp).to.be.equal('function');
+  });
+
+});
