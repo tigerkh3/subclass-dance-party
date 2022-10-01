@@ -31,5 +31,14 @@ makeBurgerDancer.prototype.lineUp = function() {
   };
   // access the style setting to move it
   $('.burger').css(styleSettings);
-  $('.burger').css('position', 'static');
+  $('.burger').css('position', 'relative');
+};
+
+makeBurgerDancer.prototype.groupUp = function() {
+  var styleSettings = {
+    top: 0,
+    left: 0,
+  };
+  $('.burger').css(styleSettings);
+  $('.burger').css('position', 'relative');
 };

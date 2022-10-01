@@ -29,8 +29,16 @@ makeBlinkyDancer.prototype.lineUp = function() {
     left: 0,
   };
   $('.dancer').css(styleSettings);
-  $('.dancer').css('display', 'inline-block');
   $('.dancer').css('position', 'static');
+};
+
+makeBlinkyDancer.prototype.groupUp = function() {
+  var styleSettings = {
+    top: 600,
+    left: 0,
+  };
+  $('.dancer').css(styleSettings);
+  $('.dancer').css('position', 'relative');
 };
 
 

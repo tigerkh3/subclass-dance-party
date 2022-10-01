@@ -41,7 +41,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.title, .lineUp{
+.title, .button {
   padding: 5px 5px;
   float: right;
 }

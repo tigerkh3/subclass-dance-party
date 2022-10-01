@@ -30,5 +30,14 @@ makePizzaDancer.prototype.lineUp = function() {
     left: 0,
   };
   $('.pizza').css(styleSettings);
-  $('.pizza').css('position', 'static');
+  $('.pizza').css('position', 'relative');
+};
+
+makePizzaDancer.prototype.groupUp = function() {
+  var styleSettings = {
+    top: 400,
+    left: 0,
+  };
+  $('.pizza').css(styleSettings);
+  $('.pizza').css('position', 'relative');
 };

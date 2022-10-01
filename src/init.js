@@ -37,5 +37,13 @@ $(document).ready(function() {
       window.dancers[i].lineUp();
     }
   });
+
+  $('.interact').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].groupUp();
+    }
+  });
+
+
 });
 
